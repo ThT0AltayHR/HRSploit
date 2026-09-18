@@ -6,7 +6,16 @@
 
 https://pypi.org/project/HRSploit/?replit_sid=61715864-8ed1-41bd-b5e8-1584ad75e1be
 
+GİTHUB 
+
+
 https://github.com/ThT0AltayHR/HRSploit.git
+
+help/guide book📖
+
+
+https://tht0altayhr.github.io/HRSploit-H/?replit_sid=e01abe82-a882-444e-a410-360ab0467706
+
 
 #pip install HRSploit
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Status](https://img.shields.io/badge/status-Production-green)
