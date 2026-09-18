@@ -1,5 +1,12 @@
 # HRSploit v1.0.0 - Professional Zero-Day Exploit Framework
 
+#turkhackteam.org
+
+@İnstall
+
+https://pypi.org/project/HRSploit/?replit_sid=61715864-8ed1-41bd-b5e8-1584ad75e1be
+
+#pip install HRSploit
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Status](https://img.shields.io/badge/status-Production-green)
 
 ## Overview
