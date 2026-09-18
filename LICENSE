@@ -1,0 +1,84 @@
+HRSploit Framework - Educational Use License
+
+Copyright (c) 2026 HRSploit Team
+
+DISCLAIMER AND TERMS OF USE:
+
+This software is provided "AS IS" for educational and authorized security research 
+purposes only. By using this software, you agree to the following terms:
+
+1. AUTHORIZED USE ONLY
+   - This tool may only be used on systems you own or have explicit written 
+     permission to test
+   - Unauthorized access to computer systems is ILLEGAL
+   - Users are responsible for all consequences of their actions
+
+2. EDUCATIONAL PURPOSE
+   - This framework is designed for learning cybersecurity concepts
+   - Understanding exploitation techniques
+   - Authorized penetration testing
+   - Security research
+
+3. PROHIBITED USE
+   - Unauthorized access or attempts to gain access
+   - Disruption of services
+   - Data theft or manipulation
+   - Any illegal activities
+   - Testing third-party systems without permission
+
+4. LIABILITY DISCLAIMER
+   - The authors and contributors are NOT liable for:
+   - Any damage caused by this software
+   - Illegal use of this software
+   - Loss of data
+   - System compromise
+   - Any direct or indirect consequences
+
+5. COMPLIANCE
+   Users must comply with:
+   - All applicable laws and regulations
+   - Local cybersecurity laws
+   - Your organization's security policies
+   - Terms of service of target systems
+
+6. LOGGING AND ACCOUNTABILITY
+   - All use of this tool should be logged
+   - Users assume full responsibility for their actions
+   - Actions may be subject to legal review
+
+7. MODIFICATIONS
+   - Users may modify this software for their own use
+   - Modifications must maintain these terms
+   - Redistribution must include this license
+
+8. NO WARRANTY
+   This software is provided without any warranty, express or implied.
+   The authors make no guarantees about:
+   - Functionality
+   - Reliability
+   - Security
+   - Any specific outcome
+
+9. THIRD-PARTY COMPONENTS
+   This framework includes third-party libraries under their respective licenses.
+   See requirements.txt for details.
+
+10. TERMINATION
+    Violation of these terms results in immediate revocation of usage rights.
+
+LEGAL NOTICE:
+Unauthorized computer access is a crime. This tool must not be used for:
+- Illegal hacking
+- Data theft
+- System damage
+- Any unlawful purposes
+
+Users acknowledging this license accept full legal responsibility for their actions.
+
+---
+
+For educational inquiries: info@hreploit.dev
+For responsible disclosure: security@hreploit.dev
+
+Last Updated: September 11, 2026
+HRSploit Framework v1.0.0

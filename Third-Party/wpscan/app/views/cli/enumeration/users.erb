@@ -1,0 +1,9 @@
+
+<% if @users.empty? -%>
+<%= notice_icon %> No Users Found.
+<% else -%>
+<%= notice_icon %> User(s) Identified:
+<% @users.each do |user| -%>
+<%= render('user', user: user) -%>
+<% end -%>
+<% end %>

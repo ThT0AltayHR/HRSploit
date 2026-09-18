@@ -1,0 +1,15 @@
+{
+  "payload": [
+    {
+      "ARGS": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "BODY": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "COOKIE": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "USER-AGENT": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "REFERER": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "HEADER": "<input id=b value=javascrip>%0A<input id=c value=t:aler>%0A<input id=d value=t(1)>%0A<lol%20%0A%20%20%20%20%20%20%20%20%20%20contenteditable%%20%0A%20%20%20%20%20%20%20%20%20%20onbeforeinput='location=b.value+c.value+d.value'>",
+      "ENCODE": "Base64 UTF-16",
+      "BLOCKED": true
+    }
+  ],
+  "source": "@smaury92"
+}

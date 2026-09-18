@@ -1,0 +1,226 @@
+// Package crtsh logic
+package crtsh
+
+import (
+	"context"
+	"database/sql"
+	"fmt"
+	"strconv"
+	"strings"
+	"time"
+
+	jsoniter "github.com/json-iterator/go"
+
+	// postgres driver
+	_ "github.com/lib/pq"
+
+	"github.com/projectdiscovery/gologger"
+	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping"
+	contextutil "github.com/projectdiscovery/utils/context"
+)
+
+type subdomain struct {
+	ID        int    `json:"id"`
+	NameValue string `json:"name_value"`
+}
+
+// Source is the passive scraping agent
+type Source struct {
+	timeTaken time.Duration
+	errors    int
+	results   int
+	requests  int
+}
+
+// Run function returns all subdomains found with the service
+func (s *Source) Run(ctx context.Context, domain string, session *subscraping.Session) <-chan subscraping.Result {
+	results := make(chan subscraping.Result)
+	s.errors = 0
+	s.results = 0
+	s.requests = 0
+
+	go func() {
+		defer func(startTime time.Time) {
+			s.timeTaken = time.Since(startTime)
+			close(results)
+		}(time.Now())
+
+		count := s.getSubdomainsFromSQL(ctx, domain, session, results)
+		if count > 0 {
+			return
+		}
+		_ = s.getSubdomainsFromHTTP(ctx, domain, session, results)
+	}()
+
+	return results
+}
+
+func (s *Source) getSubdomainsFromSQL(ctx context.Context, domain string, session *subscraping.Session, results chan subscraping.Result) int {
+	// connect_timeout: limits connection establishment time (in seconds)
+	connStr := fmt.Sprintf("host=crt.sh user=guest dbname=certwatch sslmode=disable binary_parameters=yes connect_timeout=%d", session.Timeout)
+	db, err := sql.Open("postgres", connStr)
+	if err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		return 0
+	}
+
+	defer func() {
+		if closeErr := db.Close(); closeErr != nil {
+			gologger.Warning().Msgf("Could not close database connection: %s\n", closeErr)
+		}
+	}()
+
+	conn, err := db.Conn(ctx)
+	if err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		return 0
+	}
+	defer func() {
+		_ = conn.Close()
+	}()
+
+	if _, err := conn.ExecContext(ctx, fmt.Sprintf("SET statement_timeout = %d;", session.Timeout*1000)); err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		return 0
+	}
+
+	limitClause := ""
+	if all, ok := ctx.Value(contextutil.ContextArg("All")).(contextutil.ContextArg); ok {
+		if allBool, err := strconv.ParseBool(string(all)); err == nil && !allBool {
+			limitClause = "LIMIT 10000"
+		}
+	}
+
+	// We only consume NAME_VALUE downstream, so query for that directly instead
+	// of joining ct_log_entry / running x509_* parsers on every certificate.
+	// See https://github.com/projectdiscovery/subfinder/issues/1773.
+	query := fmt.Sprintf(`SELECT DISTINCT cai.NAME_VALUE
+				FROM certificate_and_identities cai
+				WHERE plainto_tsquery('certwatch', $1) @@ identities(cai.CERTIFICATE)
+					AND cai.NAME_VALUE ILIKE ('%%' || $1 || '%%')
+				%s;`, limitClause)
+	rows, err := conn.QueryContext(ctx, query, domain)
+	if err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		return 0
+	}
+	defer rows.Close() //nolint:errcheck
+	if err := rows.Err(); err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		return 0
+	}
+
+	var count int
+	var data string
+	for rows.Next() {
+		select {
+		case <-ctx.Done():
+			return count
+		default:
+		}
+		err := rows.Scan(&data)
+		if err != nil {
+			results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+			s.errors++
+			return count
+		}
+
+		count++
+		for subdomain := range strings.SplitSeq(data, "\n") {
+			for _, value := range session.Extractor.Extract(subdomain) {
+				if value != "" {
+					select {
+					case <-ctx.Done():
+						return count
+					case results <- subscraping.Result{Source: s.Name(), Type: subscraping.Subdomain, Value: value}:
+						s.results++
+					}
+				}
+			}
+		}
+	}
+	return count
+}
+
+func (s *Source) getSubdomainsFromHTTP(ctx context.Context, domain string, session *subscraping.Session, results chan subscraping.Result) bool {
+	s.requests++
+	resp, err := session.SimpleGet(ctx, fmt.Sprintf("https://crt.sh/?q=%%25.%s&output=json", domain))
+	if err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		session.DiscardHTTPResponse(resp)
+		return false
+	}
+
+	var subdomains []subdomain
+	err = jsoniter.NewDecoder(resp.Body).Decode(&subdomains)
+	if err != nil {
+		results <- subscraping.Result{Source: s.Name(), Type: subscraping.Error, Error: err}
+		s.errors++
+		session.DiscardHTTPResponse(resp)
+		return false
+	}
+
+	session.DiscardHTTPResponse(resp)
+
+	for _, subdomain := range subdomains {
+		select {
+		case <-ctx.Done():
+			return true
+		default:
+		}
+		for sub := range strings.SplitSeq(subdomain.NameValue, "\n") {
+			for _, value := range session.Extractor.Extract(sub) {
+				if value != "" {
+					select {
+					case <-ctx.Done():
+						return true
+					case results <- subscraping.Result{Source: s.Name(), Type: subscraping.Subdomain, Value: value}:
+						s.results++
+					}
+				}
+			}
+		}
+	}
+
+	return true
+}
+
+// Name returns the name of the source
+func (s *Source) Name() string {
+	return "crtsh"
+}
+
+func (s *Source) IsDefault() bool {
+	return true
+}
+
+func (s *Source) HasRecursiveSupport() bool {
+	return true
+}
+
+func (s *Source) KeyRequirement() subscraping.KeyRequirement {
+	return subscraping.NoKey
+}
+
+func (s *Source) NeedsKey() bool {
+	return s.KeyRequirement() == subscraping.RequiredKey
+}
+
+func (s *Source) AddApiKeys(_ []string) {
+	// no key needed
+}
+
+func (s *Source) Statistics() subscraping.Statistics {
+	return subscraping.Statistics{
+		Errors:    s.errors,
+		Results:   s.results,
+		Requests:  s.requests,
+		TimeTaken: s.timeTaken,
+	}
+}

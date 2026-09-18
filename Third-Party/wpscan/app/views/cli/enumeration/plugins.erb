@@ -1,0 +1,9 @@
+
+<% if @plugins.empty? -%>
+<%= notice_icon %> No plugins Found.
+<% else -%>
+<%= notice_icon %> Plugin(s) Identified:
+<% @plugins.each do |plugin| -%>
+<%= render('plugin', plugin: plugin) -%>
+<% end -%>
+<% end %>

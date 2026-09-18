@@ -1,0 +1,7 @@
+attrs==26.1.0
+chardet==7.4.3
+colorama==0.4.6
+curlify==3.0.0
+requests==2.34.2
+tableprint==0.9.1
+yarl==1.24.5

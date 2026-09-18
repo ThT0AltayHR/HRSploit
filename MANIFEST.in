@@ -1,0 +1,18 @@
+include *.py
+include requirements.txt
+include README.md
+recursive-include Brain-System *.py
+recursive-include WAF-Detection *.py
+recursive-include SQLi-Injector *.py
+recursive-include XSS-Injector *.py
+recursive-include Brute-Force *.py
+recursive-include Exploit-DB *
+recursive-include PoC-Index *
+recursive-include CVE-Database *
+recursive-include Reconnaissance *.py
+recursive-include Zero-Day *.py
+recursive-include Port-Scanner *.py
+recursive-include Web-Scanner *.py
+recursive-include Network-Analysis *.py
+recursive-include Evasion *.py
+recursive-include Post-Exploitation *.py

@@ -1,0 +1,4635 @@
+================================================================================
+PORT-SCANNER - TEMPLATES TEMPLATE
+================================================================================
+
+File: port_scanner_template_9.txt
+Module: Port-Scanner
+Generated: 2026-09-11T20:43:02.360819
+Type: templates
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+This is a comprehensive template file for Port-Scanner module.
+It contains detailed information and usage examples.
+
+================================================================================
+TEMPLATE CONTENT
+================================================================================
+
+
+--- ENTRY 1 ---
+ID: entry_1
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 1 for exploitation
+Target: localhost:8080
+Payload: payload_content_1
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360833
+
+Payload Data:
+- Command: execute_1
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 7%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 2 ---
+ID: entry_2
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 2 for exploitation
+Target: localhost:8000
+Payload: payload_content_2
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360837
+
+Payload Data:
+- Command: execute_2
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 14%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 3 ---
+ID: entry_3
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 3 for exploitation
+Target: localhost:8080
+Payload: payload_content_3
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360839
+
+Payload Data:
+- Command: execute_3
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 21%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 4 ---
+ID: entry_4
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 4 for exploitation
+Target: localhost:8000
+Payload: payload_content_4
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360842
+
+Payload Data:
+- Command: execute_4
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 28%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 5 ---
+ID: entry_5
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 5 for exploitation
+Target: localhost:8080
+Payload: payload_content_5
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360844
+
+Payload Data:
+- Command: execute_5
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 35%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 6 ---
+ID: entry_6
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 6 for exploitation
+Target: localhost:8000
+Payload: payload_content_6
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360846
+
+Payload Data:
+- Command: execute_6
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 42%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 7 ---
+ID: entry_7
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 7 for exploitation
+Target: localhost:8080
+Payload: payload_content_7
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360848
+
+Payload Data:
+- Command: execute_7
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 49%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 8 ---
+ID: entry_8
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 8 for exploitation
+Target: localhost:8000
+Payload: payload_content_8
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360850
+
+Payload Data:
+- Command: execute_8
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 56%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 9 ---
+ID: entry_9
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 9 for exploitation
+Target: localhost:8080
+Payload: payload_content_9
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360852
+
+Payload Data:
+- Command: execute_9
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 63%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 10 ---
+ID: entry_10
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 10 for exploitation
+Target: localhost:8000
+Payload: payload_content_10
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360854
+
+Payload Data:
+- Command: execute_10
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 70%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 11 ---
+ID: entry_11
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 11 for exploitation
+Target: localhost:8080
+Payload: payload_content_11
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360856
+
+Payload Data:
+- Command: execute_11
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 77%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 12 ---
+ID: entry_12
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 12 for exploitation
+Target: localhost:8000
+Payload: payload_content_12
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360858
+
+Payload Data:
+- Command: execute_12
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 84%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 13 ---
+ID: entry_13
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 13 for exploitation
+Target: localhost:8080
+Payload: payload_content_13
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360861
+
+Payload Data:
+- Command: execute_13
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 91%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 14 ---
+ID: entry_14
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 14 for exploitation
+Target: localhost:8000
+Payload: payload_content_14
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360863
+
+Payload Data:
+- Command: execute_14
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 98%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 15 ---
+ID: entry_15
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 15 for exploitation
+Target: localhost:8080
+Payload: payload_content_15
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360865
+
+Payload Data:
+- Command: execute_15
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 5%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 16 ---
+ID: entry_16
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 16 for exploitation
+Target: localhost:8000
+Payload: payload_content_16
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360867
+
+Payload Data:
+- Command: execute_16
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 12%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 17 ---
+ID: entry_17
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 17 for exploitation
+Target: localhost:8080
+Payload: payload_content_17
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360869
+
+Payload Data:
+- Command: execute_17
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 19%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 18 ---
+ID: entry_18
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 18 for exploitation
+Target: localhost:8000
+Payload: payload_content_18
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360872
+
+Payload Data:
+- Command: execute_18
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 26%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 19 ---
+ID: entry_19
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 19 for exploitation
+Target: localhost:8080
+Payload: payload_content_19
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360895
+
+Payload Data:
+- Command: execute_19
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 33%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 20 ---
+ID: entry_20
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 20 for exploitation
+Target: localhost:8000
+Payload: payload_content_20
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360900
+
+Payload Data:
+- Command: execute_20
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 40%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 21 ---
+ID: entry_21
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 21 for exploitation
+Target: localhost:8080
+Payload: payload_content_21
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360903
+
+Payload Data:
+- Command: execute_21
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 47%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 22 ---
+ID: entry_22
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 22 for exploitation
+Target: localhost:8000
+Payload: payload_content_22
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360906
+
+Payload Data:
+- Command: execute_22
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 54%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 23 ---
+ID: entry_23
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 23 for exploitation
+Target: localhost:8080
+Payload: payload_content_23
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360909
+
+Payload Data:
+- Command: execute_23
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 61%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 24 ---
+ID: entry_24
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 24 for exploitation
+Target: localhost:8000
+Payload: payload_content_24
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360911
+
+Payload Data:
+- Command: execute_24
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 68%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 25 ---
+ID: entry_25
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 25 for exploitation
+Target: localhost:8080
+Payload: payload_content_25
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360914
+
+Payload Data:
+- Command: execute_25
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 75%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 26 ---
+ID: entry_26
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 26 for exploitation
+Target: localhost:8000
+Payload: payload_content_26
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360916
+
+Payload Data:
+- Command: execute_26
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 82%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 27 ---
+ID: entry_27
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 27 for exploitation
+Target: localhost:8080
+Payload: payload_content_27
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360919
+
+Payload Data:
+- Command: execute_27
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 89%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 28 ---
+ID: entry_28
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 28 for exploitation
+Target: localhost:8000
+Payload: payload_content_28
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360921
+
+Payload Data:
+- Command: execute_28
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 96%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 29 ---
+ID: entry_29
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 29 for exploitation
+Target: localhost:8080
+Payload: payload_content_29
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360924
+
+Payload Data:
+- Command: execute_29
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 3%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 30 ---
+ID: entry_30
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 30 for exploitation
+Target: localhost:8000
+Payload: payload_content_30
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360926
+
+Payload Data:
+- Command: execute_30
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 10%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 31 ---
+ID: entry_31
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 31 for exploitation
+Target: localhost:8080
+Payload: payload_content_31
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360929
+
+Payload Data:
+- Command: execute_31
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 17%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 32 ---
+ID: entry_32
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 32 for exploitation
+Target: localhost:8000
+Payload: payload_content_32
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360932
+
+Payload Data:
+- Command: execute_32
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 24%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 33 ---
+ID: entry_33
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 33 for exploitation
+Target: localhost:8080
+Payload: payload_content_33
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360934
+
+Payload Data:
+- Command: execute_33
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 31%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 34 ---
+ID: entry_34
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 34 for exploitation
+Target: localhost:8000
+Payload: payload_content_34
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360936
+
+Payload Data:
+- Command: execute_34
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 38%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 35 ---
+ID: entry_35
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 35 for exploitation
+Target: localhost:8080
+Payload: payload_content_35
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360939
+
+Payload Data:
+- Command: execute_35
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 45%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 36 ---
+ID: entry_36
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 36 for exploitation
+Target: localhost:8000
+Payload: payload_content_36
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360961
+
+Payload Data:
+- Command: execute_36
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 52%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 37 ---
+ID: entry_37
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 37 for exploitation
+Target: localhost:8080
+Payload: payload_content_37
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360968
+
+Payload Data:
+- Command: execute_37
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 59%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 38 ---
+ID: entry_38
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 38 for exploitation
+Target: localhost:8000
+Payload: payload_content_38
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360972
+
+Payload Data:
+- Command: execute_38
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 66%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 39 ---
+ID: entry_39
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 39 for exploitation
+Target: localhost:8080
+Payload: payload_content_39
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360975
+
+Payload Data:
+- Command: execute_39
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 73%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 40 ---
+ID: entry_40
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 40 for exploitation
+Target: localhost:8000
+Payload: payload_content_40
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360979
+
+Payload Data:
+- Command: execute_40
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 80%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 41 ---
+ID: entry_41
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 41 for exploitation
+Target: localhost:8080
+Payload: payload_content_41
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360982
+
+Payload Data:
+- Command: execute_41
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 87%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 42 ---
+ID: entry_42
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 42 for exploitation
+Target: localhost:8000
+Payload: payload_content_42
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360984
+
+Payload Data:
+- Command: execute_42
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 94%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 43 ---
+ID: entry_43
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 43 for exploitation
+Target: localhost:8080
+Payload: payload_content_43
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360987
+
+Payload Data:
+- Command: execute_43
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 1%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 44 ---
+ID: entry_44
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 44 for exploitation
+Target: localhost:8000
+Payload: payload_content_44
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360990
+
+Payload Data:
+- Command: execute_44
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 8%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 45 ---
+ID: entry_45
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 45 for exploitation
+Target: localhost:8080
+Payload: payload_content_45
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360993
+
+Payload Data:
+- Command: execute_45
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 15%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 46 ---
+ID: entry_46
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 46 for exploitation
+Target: localhost:8000
+Payload: payload_content_46
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360996
+
+Payload Data:
+- Command: execute_46
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 22%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 47 ---
+ID: entry_47
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 47 for exploitation
+Target: localhost:8080
+Payload: payload_content_47
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.360999
+
+Payload Data:
+- Command: execute_47
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 29%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 48 ---
+ID: entry_48
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 48 for exploitation
+Target: localhost:8000
+Payload: payload_content_48
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361001
+
+Payload Data:
+- Command: execute_48
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 36%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 49 ---
+ID: entry_49
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 49 for exploitation
+Target: localhost:8080
+Payload: payload_content_49
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361004
+
+Payload Data:
+- Command: execute_49
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 43%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 50 ---
+ID: entry_50
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 50 for exploitation
+Target: localhost:8000
+Payload: payload_content_50
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361007
+
+Payload Data:
+- Command: execute_50
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 50%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 51 ---
+ID: entry_51
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 51 for exploitation
+Target: localhost:8080
+Payload: payload_content_51
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361010
+
+Payload Data:
+- Command: execute_51
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 57%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 52 ---
+ID: entry_52
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 52 for exploitation
+Target: localhost:8000
+Payload: payload_content_52
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361013
+
+Payload Data:
+- Command: execute_52
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 64%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 53 ---
+ID: entry_53
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 53 for exploitation
+Target: localhost:8080
+Payload: payload_content_53
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361016
+
+Payload Data:
+- Command: execute_53
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 71%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 54 ---
+ID: entry_54
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 54 for exploitation
+Target: localhost:8000
+Payload: payload_content_54
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361019
+
+Payload Data:
+- Command: execute_54
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 78%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 55 ---
+ID: entry_55
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 55 for exploitation
+Target: localhost:8080
+Payload: payload_content_55
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361022
+
+Payload Data:
+- Command: execute_55
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 85%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 56 ---
+ID: entry_56
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 56 for exploitation
+Target: localhost:8000
+Payload: payload_content_56
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361024
+
+Payload Data:
+- Command: execute_56
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 92%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 57 ---
+ID: entry_57
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 57 for exploitation
+Target: localhost:8080
+Payload: payload_content_57
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361027
+
+Payload Data:
+- Command: execute_57
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 99%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 58 ---
+ID: entry_58
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 58 for exploitation
+Target: localhost:8000
+Payload: payload_content_58
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361030
+
+Payload Data:
+- Command: execute_58
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 6%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 59 ---
+ID: entry_59
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 59 for exploitation
+Target: localhost:8080
+Payload: payload_content_59
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361033
+
+Payload Data:
+- Command: execute_59
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 13%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 60 ---
+ID: entry_60
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 60 for exploitation
+Target: localhost:8000
+Payload: payload_content_60
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361036
+
+Payload Data:
+- Command: execute_60
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 20%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 61 ---
+ID: entry_61
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 61 for exploitation
+Target: localhost:8080
+Payload: payload_content_61
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361043
+
+Payload Data:
+- Command: execute_61
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 27%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 62 ---
+ID: entry_62
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 62 for exploitation
+Target: localhost:8000
+Payload: payload_content_62
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361049
+
+Payload Data:
+- Command: execute_62
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 34%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 63 ---
+ID: entry_63
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 63 for exploitation
+Target: localhost:8080
+Payload: payload_content_63
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361052
+
+Payload Data:
+- Command: execute_63
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 41%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 64 ---
+ID: entry_64
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 64 for exploitation
+Target: localhost:8000
+Payload: payload_content_64
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361056
+
+Payload Data:
+- Command: execute_64
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 48%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 65 ---
+ID: entry_65
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 65 for exploitation
+Target: localhost:8080
+Payload: payload_content_65
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361059
+
+Payload Data:
+- Command: execute_65
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 55%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 66 ---
+ID: entry_66
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 66 for exploitation
+Target: localhost:8000
+Payload: payload_content_66
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361062
+
+Payload Data:
+- Command: execute_66
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 62%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 67 ---
+ID: entry_67
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 67 for exploitation
+Target: localhost:8080
+Payload: payload_content_67
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361068
+
+Payload Data:
+- Command: execute_67
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 69%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 68 ---
+ID: entry_68
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 68 for exploitation
+Target: localhost:8000
+Payload: payload_content_68
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361071
+
+Payload Data:
+- Command: execute_68
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 76%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 69 ---
+ID: entry_69
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 69 for exploitation
+Target: localhost:8080
+Payload: payload_content_69
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361074
+
+Payload Data:
+- Command: execute_69
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 83%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 70 ---
+ID: entry_70
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 70 for exploitation
+Target: localhost:8000
+Payload: payload_content_70
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361080
+
+Payload Data:
+- Command: execute_70
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 90%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 71 ---
+ID: entry_71
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 71 for exploitation
+Target: localhost:8080
+Payload: payload_content_71
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361083
+
+Payload Data:
+- Command: execute_71
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 97%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 72 ---
+ID: entry_72
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 72 for exploitation
+Target: localhost:8000
+Payload: payload_content_72
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361086
+
+Payload Data:
+- Command: execute_72
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 4%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 73 ---
+ID: entry_73
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 73 for exploitation
+Target: localhost:8080
+Payload: payload_content_73
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361091
+
+Payload Data:
+- Command: execute_73
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 11%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 74 ---
+ID: entry_74
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 74 for exploitation
+Target: localhost:8000
+Payload: payload_content_74
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361094
+
+Payload Data:
+- Command: execute_74
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 18%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 75 ---
+ID: entry_75
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 75 for exploitation
+Target: localhost:8080
+Payload: payload_content_75
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361097
+
+Payload Data:
+- Command: execute_75
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 25%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 76 ---
+ID: entry_76
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 76 for exploitation
+Target: localhost:8000
+Payload: payload_content_76
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361103
+
+Payload Data:
+- Command: execute_76
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 32%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 77 ---
+ID: entry_77
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 77 for exploitation
+Target: localhost:8080
+Payload: payload_content_77
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361106
+
+Payload Data:
+- Command: execute_77
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 39%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 78 ---
+ID: entry_78
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 78 for exploitation
+Target: localhost:8000
+Payload: payload_content_78
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361109
+
+Payload Data:
+- Command: execute_78
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 46%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 79 ---
+ID: entry_79
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 79 for exploitation
+Target: localhost:8080
+Payload: payload_content_79
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361114
+
+Payload Data:
+- Command: execute_79
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 53%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 80 ---
+ID: entry_80
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 80 for exploitation
+Target: localhost:8000
+Payload: payload_content_80
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361117
+
+Payload Data:
+- Command: execute_80
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 60%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 81 ---
+ID: entry_81
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 81 for exploitation
+Target: localhost:8080
+Payload: payload_content_81
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361120
+
+Payload Data:
+- Command: execute_81
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 67%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 82 ---
+ID: entry_82
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 82 for exploitation
+Target: localhost:8000
+Payload: payload_content_82
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361127
+
+Payload Data:
+- Command: execute_82
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 74%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 83 ---
+ID: entry_83
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 83 for exploitation
+Target: localhost:8080
+Payload: payload_content_83
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361132
+
+Payload Data:
+- Command: execute_83
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 81%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 84 ---
+ID: entry_84
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 84 for exploitation
+Target: localhost:8000
+Payload: payload_content_84
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361135
+
+Payload Data:
+- Command: execute_84
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 88%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 85 ---
+ID: entry_85
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 85 for exploitation
+Target: localhost:8080
+Payload: payload_content_85
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361141
+
+Payload Data:
+- Command: execute_85
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 95%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 86 ---
+ID: entry_86
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 86 for exploitation
+Target: localhost:8000
+Payload: payload_content_86
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361144
+
+Payload Data:
+- Command: execute_86
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 2%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 87 ---
+ID: entry_87
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 87 for exploitation
+Target: localhost:8080
+Payload: payload_content_87
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361148
+
+Payload Data:
+- Command: execute_87
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 9%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 88 ---
+ID: entry_88
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 88 for exploitation
+Target: localhost:8000
+Payload: payload_content_88
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361153
+
+Payload Data:
+- Command: execute_88
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 16%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 89 ---
+ID: entry_89
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 89 for exploitation
+Target: localhost:8080
+Payload: payload_content_89
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361156
+
+Payload Data:
+- Command: execute_89
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 23%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 90 ---
+ID: entry_90
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 90 for exploitation
+Target: localhost:8000
+Payload: payload_content_90
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361160
+
+Payload Data:
+- Command: execute_90
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 30%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 91 ---
+ID: entry_91
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 91 for exploitation
+Target: localhost:8080
+Payload: payload_content_91
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361167
+
+Payload Data:
+- Command: execute_91
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 37%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 92 ---
+ID: entry_92
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 92 for exploitation
+Target: localhost:8000
+Payload: payload_content_92
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361171
+
+Payload Data:
+- Command: execute_92
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 44%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 93 ---
+ID: entry_93
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 93 for exploitation
+Target: localhost:8080
+Payload: payload_content_93
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361175
+
+Payload Data:
+- Command: execute_93
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 51%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 94 ---
+ID: entry_94
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 94 for exploitation
+Target: localhost:8000
+Payload: payload_content_94
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361182
+
+Payload Data:
+- Command: execute_94
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 58%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 95 ---
+ID: entry_95
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 95 for exploitation
+Target: localhost:8080
+Payload: payload_content_95
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361189
+
+Payload Data:
+- Command: execute_95
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 65%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 96 ---
+ID: entry_96
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 96 for exploitation
+Target: localhost:8000
+Payload: payload_content_96
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361193
+
+Payload Data:
+- Command: execute_96
+- Target Type: web
+- Execution Method: direct
+- Success Rate: 72%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 97 ---
+ID: entry_97
+Type: payload
+Severity: low
+Status: active
+Description: Port-Scanner entry 97 for exploitation
+Target: localhost:8080
+Payload: payload_content_97
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361202
+
+Payload Data:
+- Command: execute_97
+- Target Type: network
+- Execution Method: indirect
+- Success Rate: 79%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 98 ---
+ID: entry_98
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 98 for exploitation
+Target: localhost:8000
+Payload: payload_content_98
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361209
+
+Payload Data:
+- Command: execute_98
+- Target Type: system
+- Execution Method: indirect
+- Success Rate: 86%
+- Detection Risk: low
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 99 ---
+ID: entry_99
+Type: payload
+Severity: high
+Status: active
+Description: Port-Scanner entry 99 for exploitation
+Target: localhost:8080
+Payload: payload_content_99
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361213
+
+Payload Data:
+- Command: execute_99
+- Target Type: web
+- Execution Method: indirect
+- Success Rate: 93%
+- Detection Risk: medium
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+--- ENTRY 100 ---
+ID: entry_100
+Type: payload
+Severity: medium
+Status: active
+Description: Port-Scanner entry 100 for exploitation
+Target: localhost:8000
+Payload: payload_content_100
+Encoding: base64
+Author: HRSploit Team
+Created: 2026-09-11T20:43:02.361223
+
+Payload Data:
+- Command: execute_100
+- Target Type: system
+- Execution Method: direct
+- Success Rate: 0%
+- Detection Risk: high
+
+Configuration:
+  timeout: 30
+  retries: 3
+  parallel: True
+  encoding: base64
+  obfuscate: True
+
+Documentation:
+  This entry provides a Port-Scanner specific exploitation vector.
+  Ensure proper authorization before use.
+  
+Notes:
+  - Tested on multiple platforms
+  - Requires specific prerequisites
+  - May trigger security alerts
+  - Use responsibly
+
+
+
+================================================================================
+PARAMETERS
+================================================================================
+
+[PARAMETER_1]
+Name: parameter_1
+Type: boolean
+Required: false
+Default: default_1
+Description: Configuration parameter 1
+Example: example_1
+
+[PARAMETER_2]
+Name: parameter_2
+Type: string
+Required: false
+Default: default_2
+Description: Configuration parameter 2
+Example: example_2
+
+[PARAMETER_3]
+Name: parameter_3
+Type: integer
+Required: true
+Default: default_3
+Description: Configuration parameter 3
+Example: example_3
+
+[PARAMETER_4]
+Name: parameter_4
+Type: string
+Required: false
+Default: default_4
+Description: Configuration parameter 4
+Example: example_4
+
+[PARAMETER_5]
+Name: parameter_5
+Type: boolean
+Required: false
+Default: default_5
+Description: Configuration parameter 5
+Example: example_5
+
+[PARAMETER_6]
+Name: parameter_6
+Type: string
+Required: true
+Default: default_6
+Description: Configuration parameter 6
+Example: example_6
+
+[PARAMETER_7]
+Name: parameter_7
+Type: boolean
+Required: false
+Default: default_7
+Description: Configuration parameter 7
+Example: example_7
+
+[PARAMETER_8]
+Name: parameter_8
+Type: string
+Required: false
+Default: default_8
+Description: Configuration parameter 8
+Example: example_8
+
+[PARAMETER_9]
+Name: parameter_9
+Type: integer
+Required: true
+Default: default_9
+Description: Configuration parameter 9
+Example: example_9
+
+[PARAMETER_10]
+Name: parameter_10
+Type: string
+Required: false
+Default: default_10
+Description: Configuration parameter 10
+Example: example_10
+
+[PARAMETER_11]
+Name: parameter_11
+Type: boolean
+Required: false
+Default: default_11
+Description: Configuration parameter 11
+Example: example_11
+
+[PARAMETER_12]
+Name: parameter_12
+Type: string
+Required: true
+Default: default_12
+Description: Configuration parameter 12
+Example: example_12
+
+[PARAMETER_13]
+Name: parameter_13
+Type: boolean
+Required: false
+Default: default_13
+Description: Configuration parameter 13
+Example: example_13
+
+[PARAMETER_14]
+Name: parameter_14
+Type: string
+Required: false
+Default: default_14
+Description: Configuration parameter 14
+Example: example_14
+
+[PARAMETER_15]
+Name: parameter_15
+Type: integer
+Required: true
+Default: default_15
+Description: Configuration parameter 15
+Example: example_15
+
+[PARAMETER_16]
+Name: parameter_16
+Type: string
+Required: false
+Default: default_16
+Description: Configuration parameter 16
+Example: example_16
+
+[PARAMETER_17]
+Name: parameter_17
+Type: boolean
+Required: false
+Default: default_17
+Description: Configuration parameter 17
+Example: example_17
+
+[PARAMETER_18]
+Name: parameter_18
+Type: string
+Required: true
+Default: default_18
+Description: Configuration parameter 18
+Example: example_18
+
+[PARAMETER_19]
+Name: parameter_19
+Type: boolean
+Required: false
+Default: default_19
+Description: Configuration parameter 19
+Example: example_19
+
+[PARAMETER_20]
+Name: parameter_20
+Type: string
+Required: false
+Default: default_20
+Description: Configuration parameter 20
+Example: example_20
+
+[PARAMETER_21]
+Name: parameter_21
+Type: integer
+Required: true
+Default: default_21
+Description: Configuration parameter 21
+Example: example_21
+
+[PARAMETER_22]
+Name: parameter_22
+Type: string
+Required: false
+Default: default_22
+Description: Configuration parameter 22
+Example: example_22
+
+[PARAMETER_23]
+Name: parameter_23
+Type: boolean
+Required: false
+Default: default_23
+Description: Configuration parameter 23
+Example: example_23
+
+[PARAMETER_24]
+Name: parameter_24
+Type: string
+Required: true
+Default: default_24
+Description: Configuration parameter 24
+Example: example_24
+
+[PARAMETER_25]
+Name: parameter_25
+Type: boolean
+Required: false
+Default: default_25
+Description: Configuration parameter 25
+Example: example_25
+
+[PARAMETER_26]
+Name: parameter_26
+Type: string
+Required: false
+Default: default_26
+Description: Configuration parameter 26
+Example: example_26
+
+[PARAMETER_27]
+Name: parameter_27
+Type: integer
+Required: true
+Default: default_27
+Description: Configuration parameter 27
+Example: example_27
+
+[PARAMETER_28]
+Name: parameter_28
+Type: string
+Required: false
+Default: default_28
+Description: Configuration parameter 28
+Example: example_28
+
+[PARAMETER_29]
+Name: parameter_29
+Type: boolean
+Required: false
+Default: default_29
+Description: Configuration parameter 29
+Example: example_29
+
+[PARAMETER_30]
+Name: parameter_30
+Type: string
+Required: true
+Default: default_30
+Description: Configuration parameter 30
+Example: example_30
+
+[PARAMETER_31]
+Name: parameter_31
+Type: boolean
+Required: false
+Default: default_31
+Description: Configuration parameter 31
+Example: example_31
+
+[PARAMETER_32]
+Name: parameter_32
+Type: string
+Required: false
+Default: default_32
+Description: Configuration parameter 32
+Example: example_32
+
+[PARAMETER_33]
+Name: parameter_33
+Type: integer
+Required: true
+Default: default_33
+Description: Configuration parameter 33
+Example: example_33
+
+[PARAMETER_34]
+Name: parameter_34
+Type: string
+Required: false
+Default: default_34
+Description: Configuration parameter 34
+Example: example_34
+
+[PARAMETER_35]
+Name: parameter_35
+Type: boolean
+Required: false
+Default: default_35
+Description: Configuration parameter 35
+Example: example_35
+
+[PARAMETER_36]
+Name: parameter_36
+Type: string
+Required: true
+Default: default_36
+Description: Configuration parameter 36
+Example: example_36
+
+[PARAMETER_37]
+Name: parameter_37
+Type: boolean
+Required: false
+Default: default_37
+Description: Configuration parameter 37
+Example: example_37
+
+[PARAMETER_38]
+Name: parameter_38
+Type: string
+Required: false
+Default: default_38
+Description: Configuration parameter 38
+Example: example_38
+
+[PARAMETER_39]
+Name: parameter_39
+Type: integer
+Required: true
+Default: default_39
+Description: Configuration parameter 39
+Example: example_39
+
+[PARAMETER_40]
+Name: parameter_40
+Type: string
+Required: false
+Default: default_40
+Description: Configuration parameter 40
+Example: example_40
+
+[PARAMETER_41]
+Name: parameter_41
+Type: boolean
+Required: false
+Default: default_41
+Description: Configuration parameter 41
+Example: example_41
+
+[PARAMETER_42]
+Name: parameter_42
+Type: string
+Required: true
+Default: default_42
+Description: Configuration parameter 42
+Example: example_42
+
+[PARAMETER_43]
+Name: parameter_43
+Type: boolean
+Required: false
+Default: default_43
+Description: Configuration parameter 43
+Example: example_43
+
+[PARAMETER_44]
+Name: parameter_44
+Type: string
+Required: false
+Default: default_44
+Description: Configuration parameter 44
+Example: example_44
+
+[PARAMETER_45]
+Name: parameter_45
+Type: integer
+Required: true
+Default: default_45
+Description: Configuration parameter 45
+Example: example_45
+
+[PARAMETER_46]
+Name: parameter_46
+Type: string
+Required: false
+Default: default_46
+Description: Configuration parameter 46
+Example: example_46
+
+[PARAMETER_47]
+Name: parameter_47
+Type: boolean
+Required: false
+Default: default_47
+Description: Configuration parameter 47
+Example: example_47
+
+[PARAMETER_48]
+Name: parameter_48
+Type: string
+Required: true
+Default: default_48
+Description: Configuration parameter 48
+Example: example_48
+
+[PARAMETER_49]
+Name: parameter_49
+Type: boolean
+Required: false
+Default: default_49
+Description: Configuration parameter 49
+Example: example_49
+
+[PARAMETER_50]
+Name: parameter_50
+Type: string
+Required: false
+Default: default_50
+Description: Configuration parameter 50
+Example: example_50
+
+
+
+================================================================================
+RULES AND PATTERNS
+================================================================================
+
+Rule_1:
+  Pattern: pattern_1
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 1 for Port-Scanner
+
+Rule_2:
+  Pattern: pattern_2
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 2 for Port-Scanner
+
+Rule_3:
+  Pattern: pattern_3
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 3 for Port-Scanner
+
+Rule_4:
+  Pattern: pattern_4
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 4 for Port-Scanner
+
+Rule_5:
+  Pattern: pattern_5
+  Action: execute
+  Severity: critical
+  Enabled: false
+  Description: Rule 5 for Port-Scanner
+
+Rule_6:
+  Pattern: pattern_6
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 6 for Port-Scanner
+
+Rule_7:
+  Pattern: pattern_7
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 7 for Port-Scanner
+
+Rule_8:
+  Pattern: pattern_8
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 8 for Port-Scanner
+
+Rule_9:
+  Pattern: pattern_9
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 9 for Port-Scanner
+
+Rule_10:
+  Pattern: pattern_10
+  Action: log
+  Severity: critical
+  Enabled: true
+  Description: Rule 10 for Port-Scanner
+
+Rule_11:
+  Pattern: pattern_11
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 11 for Port-Scanner
+
+Rule_12:
+  Pattern: pattern_12
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 12 for Port-Scanner
+
+Rule_13:
+  Pattern: pattern_13
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 13 for Port-Scanner
+
+Rule_14:
+  Pattern: pattern_14
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 14 for Port-Scanner
+
+Rule_15:
+  Pattern: pattern_15
+  Action: alert
+  Severity: critical
+  Enabled: false
+  Description: Rule 15 for Port-Scanner
+
+Rule_16:
+  Pattern: pattern_16
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 16 for Port-Scanner
+
+Rule_17:
+  Pattern: pattern_17
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 17 for Port-Scanner
+
+Rule_18:
+  Pattern: pattern_18
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 18 for Port-Scanner
+
+Rule_19:
+  Pattern: pattern_19
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 19 for Port-Scanner
+
+Rule_20:
+  Pattern: pattern_20
+  Action: log
+  Severity: critical
+  Enabled: true
+  Description: Rule 20 for Port-Scanner
+
+Rule_21:
+  Pattern: pattern_21
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 21 for Port-Scanner
+
+Rule_22:
+  Pattern: pattern_22
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 22 for Port-Scanner
+
+Rule_23:
+  Pattern: pattern_23
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 23 for Port-Scanner
+
+Rule_24:
+  Pattern: pattern_24
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 24 for Port-Scanner
+
+Rule_25:
+  Pattern: pattern_25
+  Action: execute
+  Severity: critical
+  Enabled: false
+  Description: Rule 25 for Port-Scanner
+
+Rule_26:
+  Pattern: pattern_26
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 26 for Port-Scanner
+
+Rule_27:
+  Pattern: pattern_27
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 27 for Port-Scanner
+
+Rule_28:
+  Pattern: pattern_28
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 28 for Port-Scanner
+
+Rule_29:
+  Pattern: pattern_29
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 29 for Port-Scanner
+
+Rule_30:
+  Pattern: pattern_30
+  Action: log
+  Severity: critical
+  Enabled: true
+  Description: Rule 30 for Port-Scanner
+
+Rule_31:
+  Pattern: pattern_31
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 31 for Port-Scanner
+
+Rule_32:
+  Pattern: pattern_32
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 32 for Port-Scanner
+
+Rule_33:
+  Pattern: pattern_33
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 33 for Port-Scanner
+
+Rule_34:
+  Pattern: pattern_34
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 34 for Port-Scanner
+
+Rule_35:
+  Pattern: pattern_35
+  Action: execute
+  Severity: critical
+  Enabled: false
+  Description: Rule 35 for Port-Scanner
+
+Rule_36:
+  Pattern: pattern_36
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 36 for Port-Scanner
+
+Rule_37:
+  Pattern: pattern_37
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 37 for Port-Scanner
+
+Rule_38:
+  Pattern: pattern_38
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 38 for Port-Scanner
+
+Rule_39:
+  Pattern: pattern_39
+  Action: alert
+  Severity: high
+  Enabled: false
+  Description: Rule 39 for Port-Scanner
+
+Rule_40:
+  Pattern: pattern_40
+  Action: log
+  Severity: critical
+  Enabled: true
+  Description: Rule 40 for Port-Scanner
+
+Rule_41:
+  Pattern: pattern_41
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 41 for Port-Scanner
+
+Rule_42:
+  Pattern: pattern_42
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 42 for Port-Scanner
+
+Rule_43:
+  Pattern: pattern_43
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 43 for Port-Scanner
+
+Rule_44:
+  Pattern: pattern_44
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 44 for Port-Scanner
+
+Rule_45:
+  Pattern: pattern_45
+  Action: alert
+  Severity: critical
+  Enabled: false
+  Description: Rule 45 for Port-Scanner
+
+Rule_46:
+  Pattern: pattern_46
+  Action: log
+  Severity: medium
+  Enabled: true
+  Description: Rule 46 for Port-Scanner
+
+Rule_47:
+  Pattern: pattern_47
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 47 for Port-Scanner
+
+Rule_48:
+  Pattern: pattern_48
+  Action: log
+  Severity: high
+  Enabled: true
+  Description: Rule 48 for Port-Scanner
+
+Rule_49:
+  Pattern: pattern_49
+  Action: execute
+  Severity: medium
+  Enabled: false
+  Description: Rule 49 for Port-Scanner
+
+Rule_50:
+  Pattern: pattern_50
+  Action: log
+  Severity: critical
+  Enabled: true
+  Description: Rule 50 for Port-Scanner
+
+
+
+================================================================================
+USAGE EXAMPLES
+================================================================================
+
+Example 1: Basic Usage
+
+
+Example 1:
+Command: port-scanner --execute --id entry_1
+Expected Output: Success
+Timing: ~100ms
+Description: Example 1 of Port-Scanner usage
+
+
+
+Example 2:
+Command: port-scanner --execute --id entry_2
+Expected Output: Success
+Timing: ~200ms
+Description: Example 2 of Port-Scanner usage
+
+
+
+Example 3:
+Command: port-scanner --execute --id entry_3
+Expected Output: Success
+Timing: ~300ms
+Description: Example 3 of Port-Scanner usage
+
+
+
+Example 4:
+Command: port-scanner --execute --id entry_4
+Expected Output: Success
+Timing: ~400ms
+Description: Example 4 of Port-Scanner usage
+
+
+
+Example 5:
+Command: port-scanner --execute --id entry_5
+Expected Output: Success
+Timing: ~500ms
+Description: Example 5 of Port-Scanner usage
+
+
+
+Example 6:
+Command: port-scanner --execute --id entry_6
+Expected Output: Success
+Timing: ~600ms
+Description: Example 6 of Port-Scanner usage
+
+
+
+Example 7:
+Command: port-scanner --execute --id entry_7
+Expected Output: Success
+Timing: ~700ms
+Description: Example 7 of Port-Scanner usage
+
+
+
+Example 8:
+Command: port-scanner --execute --id entry_8
+Expected Output: Success
+Timing: ~800ms
+Description: Example 8 of Port-Scanner usage
+
+
+
+Example 9:
+Command: port-scanner --execute --id entry_9
+Expected Output: Success
+Timing: ~900ms
+Description: Example 9 of Port-Scanner usage
+
+
+
+Example 10:
+Command: port-scanner --execute --id entry_10
+Expected Output: Success
+Timing: ~1000ms
+Description: Example 10 of Port-Scanner usage
+
+
+
+================================================================================
+CONFIGURATION REFERENCE
+================================================================================
+
+General Settings:
+- Module: Port-Scanner
+- Version: 1.0.0
+- Status: Production
+- Enabled: true
+
+Performance:
+- Workers: 8
+- Timeout: 30s
+- Cache TTL: 300s
+- Batch Size: 100
+
+Security:
+- Encryption: AES-256
+- Verification: Enabled
+- Sanitization: Enabled
+- Logging: Full
+
+Database:
+- Type: SQLite
+- Path: data.db
+- Pool Size: 10
+- Timeout: 30s
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Issue 1: Module not responding
+Solution: Check timeout and retry settings
+
+Issue 2: Permission denied
+Solution: Ensure proper file permissions
+
+Issue 3: Configuration error
+Solution: Validate JSON format
+
+Issue 4: Connection timeout
+Solution: Increase network timeout
+
+================================================================================
+LEGAL DISCLAIMER
+================================================================================
+
+This template is for educational and authorized testing purposes only.
+Unauthorized access to computer systems is illegal.
+Users are responsible for all consequences of their actions.
+
+================================================================================
+REFERENCES
+================================================================================
+
+- Documentation: https://docs.hreploit.dev
+- OWASP: https://owasp.org/
+- CVE: https://cve.mitre.org/
+- GitHub: https://github.com/hreploit/framework
+
+================================================================================
+END OF FILE
+================================================================================

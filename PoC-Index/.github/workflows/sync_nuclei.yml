@@ -1,0 +1,81 @@
+name: Sync Nuclei Templates
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 4 * * *'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repository-updates
+  cancel-in-progress: false
+
+jobs:
+  ScheduledRun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Pull templates and fold them into the index
+        run: python3 scripts/sync_nuclei.py
+
+      - name: Verify the generated index
+        run: |
+          python3 -m unittest discover -s tests
+          python3 scripts/build_site.py
+
+      - name: Refresh published counts
+        run: |
+          python3 .github/hero.py
+          python3 .github/getTrending.py --counts-only
+
+      - name: Check for changes and commit
+        id: commit
+        run: |
+          git config user.name 'CVE-BOT'
+          git config user.email 'bot@pocindex.io'
+          git add --all -- \
+            README.md \
+            docs/hero.svg \
+            docs/social-card.svg \
+            docs/stats.json \
+            docs/kev.svg \
+            index/cve_dates.json \
+            index/cve_record_state.json \
+            index/nuclei.json \
+            cves/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Sync nuclei templates $(date -u +'%Y-%m-%d') :robot:"
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push rejected; replaying onto the current main (attempt $attempt)"
+            git fetch --unshallow origin main 2>/dev/null || git fetch origin main
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+      # Commits pushed with the workflow token raise no push event, so site.yml
+      # would otherwise wait for its daily schedule. Dispatching is exempt.
+      - name: Rebuild and deploy the site
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run site.yml --ref main

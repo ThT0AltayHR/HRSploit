@@ -1,0 +1,97 @@
+name: Hot CVEs List
+
+# Fired every hour at :05 by pacemaker.yml. No cron here: GitHub's scheduler
+# creates cron runs hours late, which is the whole reason the pacemaker exists.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repository-updates
+  cancel-in-progress: false
+
+jobs:
+  ScheduledRun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      # Every repository pushed in the last day that names a CVE of this year
+      # or last, with its README read and the classifier applied, so a PoC
+      # published this morning is on the site within the hour. The daily run
+      # keeps covering every year and the CVE record references.
+      - name: Discover this year's PoCs pushed in the last day
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_cves.py --lookback-days 1 --years 2 --skip-cvelist
+
+      - name: Ingest the previous hour's candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/sync_pocingithub.py --input index/trending.json
+
+      - name: Redraw the banner and recount the index
+        run: |
+          # Counts the corpus with the site build's own parser, so the banner can
+          # never disagree with the site, and drops the figures in docs/stats.json
+          # for the README badges to quote.
+          python3 .github/hero.py
+
+      - name: Rebuild the trending PoC table
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/getTrending.py
+
+      - name: Check for changes and commit
+        id: commit
+        run: |
+          git config user.name 'CVE-BOT'
+          git config user.email 'bot@pocindex.io'
+          git add --all -- \
+            README.md \
+            index/trending.json \
+            index/github.txt \
+            index/references.txt \
+            index/reference_pocs.txt \
+            index/cve_dates.json \
+            index/cve_record_state.json \
+            docs/hero.svg \
+            docs/social-card.svg \
+            docs/stats.json \
+            docs/kev.svg \
+            cves/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Trending CVEs update $(date -u +'%Y-%m-%d %H:%M') :robot:"
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push rejected; replaying onto the current main (attempt $attempt)"
+            git fetch --unshallow origin main 2>/dev/null || git fetch origin main
+            git rebase FETCH_HEAD || { git rebase --abort; exit 1; }
+          done
+          exit 1
+
+      # Commits pushed with the workflow token raise no push event, so site.yml
+      # would otherwise wait for its daily schedule. Dispatching is exempt.
+      - name: Rebuild and deploy the site
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run site.yml --ref main

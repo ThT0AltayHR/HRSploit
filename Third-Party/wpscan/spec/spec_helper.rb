@@ -1,0 +1,134 @@
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
+require 'simplecov' # Configuration is defined in ./.simplecov
+SimpleCov.start
+require 'rspec/its'
+require 'webmock/rspec'
+require 'tmpdir'
+
+# See http://betterspecs.org/
+RSpec.configure do |config|
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
+
+  # For --only-failures / --next-failure
+  config.example_status_persistence_file_path = File.join(ENV['TMPDIR'] || '/tmp', 'rspec_examples.txt')
+
+  # Prevent the VulnApi global state (token, enterprise local-DB mode and its memoized dumps)
+  # from leaking between examples/files. Examples that need a token set it in their own before.
+  config.before do
+    WPScan::DB::VulnApi.token = nil
+    WPScan::DB::VulnApi.local_db = nil
+    %i[@plugins_db @themes_db @wordpresses_db].each do |ivar|
+      WPScan::DB::VulnApi.instance_variable_set(ivar, nil)
+    end
+  end
+end
+
+def redefine_constant(constant, value)
+  WPScan.send(:remove_const, constant)
+  WPScan.const_set(constant, value)
+end
+
+# Dynamic Finders Helpers
+def df_expected_all
+  YAML.safe_load_file(DYNAMIC_FINDERS_FIXTURES.join('expected.yml'))
+end
+
+def df_tested_class_constant(type, finder_class, slug = nil)
+  if slug
+    "WPScan::Finders::#{type}::#{classify_slug(slug)}::#{classify_slug(finder_class)}".constantize
+  else
+    "WPScan::Finders::#{type}::#{classify_slug(finder_class)}".constantize
+  end
+end
+
+def df_stubbed_response(fixture, finder_super_class)
+  if finder_super_class == 'HeaderPattern'
+    { headers: JSON.parse(File.read(fixture)) }
+  else
+    { body: File.read(fixture, mode: 'rb') }
+  end
+end
+
+def vuln_api_data_for(path)
+  JSON.parse(File.read(FIXTURES.join('db', 'vuln_api', "#{path}.json")))
+end
+
+def count_files_in_dir(absolute_dir_path, files_pattern = '*')
+  Dir.glob(File.join(absolute_dir_path, files_pattern)).count
+end
+
+# Parse a file containing raw headers and return the associated Hash
+# @return [ Hash ]
+def parse_headers_file(filepath)
+  Typhoeus::Response::Header.new(File.read(filepath))
+end
+
+require 'wpscan'
+require 'shared_examples'
+
+def rspec_parsed_options(args)
+  controllers = WPScan::Controller.constants.reject { |c| c == :Base }.reduce(WPScan::Controllers.new) do |a, sym|
+    a << WPScan::Controller.const_get(sym).new
+  end
+
+  controllers.option_parser.results(args.split)
+end
+
+# TODO: remove when https://github.com/bblimke/webmock/issues/552 fixed
+#       Also remove from WPScan
+# rubocop:disable all
+module WebMock
+  module HttpLibAdapters
+    class TyphoeusAdapter < HttpLibAdapter
+      def self.effective_url(effective_uri)
+        effective_uri.port = nil if effective_uri.scheme == 'http' && effective_uri.port == 80
+        effective_uri.port = nil if effective_uri.scheme == 'https' && effective_uri.port == 443
+
+        effective_uri.to_s
+      end
+
+      def self.generate_typhoeus_response(request_signature, webmock_response)
+        response = if webmock_response.should_timeout
+                     ::Typhoeus::Response.new(
+                       code: 0,
+                       status_message: '',
+                       body: '',
+                       headers: {},
+                       return_code: :operation_timedout
+                     )
+                   else
+                     ::Typhoeus::Response.new(
+                       code: webmock_response.status[0],
+                       status_message: webmock_response.status[1],
+                       body: webmock_response.body,
+                       headers: webmock_response.headers,
+                       effective_url: effective_url(request_signature.uri)
+                     )
+        end
+        response.mock = :webmock
+        response
+      end
+    end
+  end
+end
+# rubocop:enable all
+
+SPECS                    = Pathname.new(__FILE__).dirname
+CACHE                    = SPECS.join('cache')
+FIXTURES                 = SPECS.join('fixtures')
+FINDERS_FIXTURES         = FIXTURES.join('finders')
+FIXTURES_FINDERS         = FINDERS_FIXTURES
+FIXTURES_MODELS          = FIXTURES.join('models')
+FIXTURES_CONTROLLERS     = FIXTURES.join('controllers')
+FIXTURES_VIEWS           = FIXTURES.join('views')
+DYNAMIC_FINDERS_FIXTURES = FIXTURES.join('dynamic_finders')
+OPV_FIXTURES             = FIXTURES.join('opt_parse_validator')
+APP_VIEWS                = File.join(WPScan::APP_DIR, 'views')
+ERROR_404_URL_PATTERN    = %r{/[a-z\d]{7}\.html$}
+
+redefine_constant(:DB_DIR, FIXTURES.join('db'))
