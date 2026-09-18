@@ -6,6 +6,8 @@
 
 https://pypi.org/project/HRSploit/?replit_sid=61715864-8ed1-41bd-b5e8-1584ad75e1be
 
+https://github.com/ThT0AltayHR/HRSploit.git
+
 #pip install HRSploit
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Status](https://img.shields.io/badge/status-Production-green)
 
